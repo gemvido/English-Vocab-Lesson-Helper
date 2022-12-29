@@ -15,7 +15,7 @@ const wordArea = document.getElementById("wordTextarea");
 const copy = () => navigator.clipboard.writeText(wordArea().value);
 
 const update = function () {
-    wordArea().innerHTML = shuffle(vocabWords).join(" \n");
+    wordArea.innerHTML = shuffle(vocabWords).join(" \n");
 };
 
 
