@@ -8,9 +8,9 @@ const vocabWords = [
     "Parallelism", "Simile"
 ];
 
-const button = () => document.getElementById("generateButton");
-const cpButton = () => document.getElementById("copyButton");
-const wordArea = () => document.getElementById("wordTextarea");
+const button = document.getElementById("generateButton");
+const cpButton = document.getElementById("copyButton");
+const wordArea = document.getElementById("wordTextarea");
 
 const copy = () => navigator.clipboard.writeText(wordArea().value);
 
@@ -20,5 +20,5 @@ const update = function () {
 
 
 document.addEventListener("DOMContentLoaded", update);
-button().onclick = update;
-cpButton().onclick = copy;
+button.onclick = update;
+cpButton.onclick = copy;
